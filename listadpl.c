@@ -13,7 +13,7 @@ struct tipoitem {
     char* nome;
     char* end;
     int mat;
-};
+};  
 
 struct tipolistadpl{
     TipoItem* item;
