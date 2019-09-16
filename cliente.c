@@ -16,10 +16,19 @@ void main(void) {
     TipoItem* catarina = InicializaTipoItem("catarina", 987, "rua da catarina");
 
     lista = Insere(matheus, lista);
-    Insere(maria, lista);
-    Insere(sofia, lista);
-    Insere(jose, lista);
-    Insere(joao, lista);
-    Insere(catarina, lista);
+    lista = Insere(maria, lista);
+    lista = Insere(sofia, lista);
+    lista = Insere(jose, lista);
+    lista = Insere(joao, lista);
+    lista = Insere(catarina, lista);
     Imprime(lista);
+
+    printf("Após retirada \n");
+
+    Retira(lista, "Matheus");
+
+    Imprime(lista);
+
+    libera(lista);
+    
 }
